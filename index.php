@@ -7,11 +7,11 @@
 
     <!-- Content -->
     <div class="container-fluid">
-        <div class="container">
-            <div class="row mt-5">
+        <div class="container pt-2">
+            <div class="row ">
                 <!-- Text Content -->
                 <div class="col-lg-6 bg-light p-5">
-                    <h1>Forex design</h1>
+                    <h1>Wooden constructions</h1>
                     <p>Let us bring the essence of Scandinavia to your project.</p>
                 </div>
                 <!-- Image -->
@@ -22,14 +22,12 @@
             <!-- Services Section -->
             <!-- Card Section -->
             <div class="row">
-                <div class="col-lg-6 bg-light p-5">
+                <div class="col-lg-8 bg-light p-5">
                     <h2>Our Services</h2>
-                    <p>Naše usluge uključuju izgradnju, isporuku visokokvalitetnih drvenih elemenata za opremanje eksterijera ,izgradnju montažnih objekata i adekvatnih veznih elemenata.
-                        Profesionalnim i pouzdanim uslugama, vaši projekti na otvorenom , sa zadovaljavanjem svih ekoloških standarda, postaju stvarnost.
-                        Svako dreveni element poseduje CE sertifikat i 20 godišnju garanciju, vezni elementi su galvanizovani ili A2 kvaliteta.
-                        .</p>
+                    <p>Our services include construction, delivery of high-quality wooden elements for furnishing the exterior, construction of prefabricated buildings and adequate connecting elements. With professional and reliable services, your outdoor projects, meeting all environmental standards, become a reality. Each ancient element has a CE certificate and a 20-year warranty, the connecting elements are galvanized or A2 quality.
+                    </p>
                 </div>
-                <div class="col-lg-6 bg-light p-5">
+                <div class="col-lg-4 bg-light p-5">
                     <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">Contact Us</h5>
@@ -42,7 +40,7 @@
             <!-- See Our Projects Section -->
             <div class="row  bg-light">
                 <div class="col-lg-12">
-                    <h2 class="text-center">See Our Projects</h2>
+                    <h2 class="">WOODEN FACADES - REFERENCES</h2>
                     <div id="projectCarousel" class="carousel slide" data-ride="carousel">
                         <div class="carousel-inner">
                             <div class="carousel-item active">

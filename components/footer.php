@@ -1,5 +1,5 @@
 <!-- footer.inc.php -->
-<footer class="footer">
+<footer class="footer bg-dark">
     <div class="container">
         <hr style="border-top: 1px solid #ddd; margin-top: 20px; margin-bottom: 20px;">
         <div class="row">
@@ -9,7 +9,7 @@
                 <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
                 <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
             </div>
-            <div class="col-md-6">
+            <div class="col-md-6" style="color: white;">
                 <!-- Contact Information -->
                 <p>Phone: 123-456-7890</p>
                 <p>Email: info@yourbusiness.com</p>
