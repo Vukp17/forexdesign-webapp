@@ -1,4 +1,5 @@
 <!-- navbar.php -->
+<?php include 'components/header.inc.php'; ?>
 <?php
 session_start();
 if (isset($_GET['lang'])) {
@@ -44,7 +45,7 @@ include "languages/$lang.php";
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                         <a class="dropdown-item" href="?lang=en">English</a>
-                        <a class="dropdown-item" href="?lang=fr">Français</a>
+                        <a class="dropdown-item" href="?lang=srb">Serbian</a>
                         <!-- Add more language options here if needed -->
                     </div>
                 </li>
