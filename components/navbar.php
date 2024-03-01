@@ -1,5 +1,5 @@
 <!-- navbar.php -->
-<?php include 'components/header.inc.php'; ?>
+
 <?php
 session_start();
 if (isset($_GET['lang'])) {
@@ -13,11 +13,25 @@ if (isset($_GET['lang'])) {
 }
 include "languages/$lang.php";
 ?>
+
+<style>
+    .image-wrapper {
+        display: flex;
+        align-items: center;
+    }
+
+    .image-wrapper img {
+        width: 70px;
+        height: 70px;
+        margin-right: 10px;
+    }
+</style>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container">
         <a class="navbar-brand" href="#">
             <div class="image-wrapper">
-                <h1>FOREX DESIGN</h1>
+                <img  src="images/forex_design.png" alt="Logo">
+                <!-- <h1>FOREX DESIGN</h1> -->
             </div>
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -26,26 +40,26 @@ include "languages/$lang.php";
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav mr-auto">
                 <li class="nav-item active">
-                    <a class="nav-link" href="index.php">Home</a>
+                    <a class="nav-link" href="index.php"><?php echo $lang['home']; ?></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.php">About Us</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="about.php"><?php echo $lang['about_us']; ?></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.php">Contact Us</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="contact.php"><?php echo $lang['contact_us']; ?></a>
                 </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="certificates.php">Certificates</a>
+                <li class="nav-item active">
+                    <a class="nav-link" href="certificates.php"><?php echo $lang['certificates']; ?></a>
                 </li>
             </ul>
             <ul class="navbar-nav">
                 <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle"  id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Language
+                    <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <?php echo $lang['language']; ?>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="?lang=en">English</a>
-                        <a class="dropdown-item" href="?lang=srb">Serbian</a>
+                        <a class="dropdown-item" href="?lang=en"><?php echo $lang['english']; ?></a>
+                        <a class="dropdown-item" href="?lang=srb"><?php echo $lang['serbian']; ?></a>
                         <!-- Add more language options here if needed -->
                     </div>
                 </li>
