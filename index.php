@@ -1,5 +1,26 @@
 <!-- index.php -->
 <?php include 'components/header.inc.php'; ?>
+<style>
+    .carousel-image {
+        max-width: 80%;
+        /* Adjust as needed */
+        height: auto;
+        /* Maintain aspect ratio */
+    }
+
+    .card {
+        width: 18rem;
+        height: 100%;
+        /* Adjust as needed */
+    }
+
+    .card img {
+        width: 100%;
+        /* Adjust as needed */
+        height: auto;
+        /* Adjust as needed */
+    }
+</style>
 
 <body>
 
@@ -11,7 +32,6 @@
             <div class="row hero">
                 <!-- Text Content -->
                 <div class="col-lg-6 bg-light p-5">
-                    <?php echo "<h1>" . $lang['welcome'] . "</h1>"; ?>
                     <h1><?php echo $lang['wooden_constructions']; ?></h1>
                     <p><?php echo $lang['scandinavia_essence']; ?></p>
                 </div>
@@ -37,6 +57,32 @@
                     </div>
                 </div>
             </div>
+            <!-- Partners Section -->
+            <div class="row">
+                <div class="col-lg-4 bg-light p-5">
+                    <div class="card">
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <img src="images/zasavica_logo.png" alt="Partner 2 Logo">
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 bg-light p-5">
+                    <div class="card">
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <img src="images/modulor_logo.png" alt="Partner 3 Logo">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-lg-4 bg-light p-5">
+                    <div class="card">
+                        <div class="card-body d-flex justify-content-center align-items-center">
+                            <img src="images/modulor_logo.png" alt="Partner 3 Logo">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <!-- See Our Projects Section -->
             <div class="row  bg-light">
                 <div class="col-lg-12">
@@ -47,7 +93,16 @@
                                 <img src="images/Picture7.jpg" class="d-block mx-auto carousel-image fixed-size" alt="Pool">
                             </div> -->
                             <div class="carousel-item active">
-                                <img src="images/Picture6.jpg" class="d-block mx-auto carousel-image fixed-size" alt="Facade">
+                                <img src="Presentation/Slide4.PNG" class="d-block mx-auto carousel-image fixed-size" alt="Facade">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="Presentation/Slide5.PNG" class="d-block mx-auto carousel-image fixed-size" alt="Facade">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="Presentation/Slide6.PNG" class="d-block mx-auto carousel-image fixed-size" alt="Facade">
+                            </div>
+                            <div class="carousel-item ">
+                                <img src="Presentation/Slide7.PNG" class="d-block mx-auto carousel-image fixed-size" alt="Facade">
                             </div>
                             <!-- <div class="carousel-item">
                                 <img src="images/Picture2.jpg" class="d-block mx-auto carousel-image fixed-size" alt="Pergola">

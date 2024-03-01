@@ -23,7 +23,7 @@
             "position" => $lang['ceo'],
             "bio" => $lang['ceo_bio'],
             "image" => "",
-            "linkedin" => "https://www.linkedin.com/in/darko-papić/",
+            "linkedin" => "https://www.linkedin.com/in/darko-papic-a64098178/",
             "email" => "darko@example.com"
         ],
         [

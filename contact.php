@@ -1,8 +1,6 @@
-<!DOCTYPE html>
-<html lang="en">
+
 
 <head>
-    <title><?php echo $lang['contact_us']; ?></title>
     <link rel="stylesheet" href="css/about.css">
     <style>
         .hero {
@@ -36,13 +34,13 @@
         <div class="row justify-content-center  bg-light">
             <div class="col-md-4">
                 <div class="contact-info">
-                    <p><strong><?php echo $lang['telephone']; ?>:</strong> 123-456-7890</p>
+                    <p><strong><?php echo $lang['telephone']; ?>:</strong> +381 641332846</p>
                     <hr>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="contact-info">
-                    <p><strong><?php echo $lang['email']; ?>:</strong> info@example.com</p>
+                    <p><strong><?php echo $lang['email']; ?>:</strong> darkopapic2576@gmail.com</p>
                     <hr>
                 </div>
             </div>

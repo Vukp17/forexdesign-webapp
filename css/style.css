@@ -104,10 +104,10 @@ footer {
 }
 
 
-.carousel-image {
-    height: 300px;  /* Adjust as needed */
-    object-fit: cover;  /* This will make the images scale while maintaining their aspect ratio */
-}
+/* .carousel-image {
+    height: 300px;  
+    object-fit: cover; 
+} */
 
 /* Custom CSS for Contact Page */
 

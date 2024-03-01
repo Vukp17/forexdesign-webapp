@@ -8,7 +8,7 @@ $lang = array(
     "contact_us" => "Contact Us",
     "contact_us_description" => "If you have any inquiries or need assistance, feel free to contact us.",
     "go_to_contact_us" => "Go to Contact Us",
-    "gallery" => "Gallery",
+    "gallery" => "Gallery of ideas",
     "previous" => "Previous",
     "next" => "Next",
     // About us 
@@ -41,7 +41,7 @@ $lang = array(
     "about_us" => "About Us",
     "contact_us" => "Contact Us",
     "certificates" => "Certificates",
-    "language" => "Language",
+    "language" => "en",
     "english" => "English",
     "serbian" => "Serbian",
     //Footer

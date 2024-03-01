@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- <meta name="author" content="ames d.o.o." />
+    <meta name="description" content="Sweedsih wood page">    <!-- <meta name="author" content="ames d.o.o." />
     <meta name="keyword" content="SiSchedule" /> -->
     <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico" />
     <title>ForexDesign</title>

@@ -3,18 +3,20 @@
 <?php
 session_start();
 if (isset($_GET['lang'])) {
-    $lang = $_GET['lang'];
+    $langlocale = $_GET['lang'];
     // Store the language setting in the session so it persists across pages
-    $_SESSION['lang'] = $lang;
+    $_SESSION['lang'] = $langlocale;
 } else if (isset($_SESSION['lang'])) {
-    $lang = $_SESSION['lang'];
+    $langlocale = $_SESSION['lang'];
 } else {
-    $lang = 'en';  // Default language
+    $langlocale = 'en';  // Default language
+    $_SESSION['lang'] = $langlocale;
 }
-include "languages/$lang.php";
+include "languages/$langlocale.php";
 ?>
 
 <style>
+    
     .image-wrapper {
         display: flex;
         align-items: center;
@@ -30,7 +32,7 @@ include "languages/$lang.php";
     <div class="container">
         <a class="navbar-brand" href="#">
             <div class="image-wrapper">
-                <img  src="images/forex_design.png" alt="Logo">
+                <img src="images/forex_design.png" alt="Logo">
                 <!-- <h1>FOREX DESIGN</h1> -->
             </div>
         </a>
@@ -53,13 +55,20 @@ include "languages/$lang.php";
                 </li>
             </ul>
             <ul class="navbar-nav">
-                <li class="nav-item dropdown">
+                <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <?php echo $lang['language']; ?>
+                        <img src="images/<?php echo $langlocale; ?>.png" alt="<?php echo $lang['language']; ?>" style="height:20px; width:20px;">
+                         <?php echo  $langlocale; ?>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                        <a class="dropdown-item" href="?lang=en"><?php echo $lang['english']; ?></a>
-                        <a class="dropdown-item" href="?lang=srb"><?php echo $lang['serbian']; ?></a>
+                        <a class="dropdown-item" href="?lang=en">
+                            <img src="images/en.png" alt="en" style="height:20px; width:20px;">
+                            <?php echo $lang['english']; ?>
+                        </a>
+                        <a class="dropdown-item" href="?lang=srb">
+                            <img src="images/srb.png" alt="srb" style="height:20px; width:20px;">
+                            <?php echo $lang['serbian']; ?>
+                        </a>
                         <!-- Add more language options here if needed -->
                     </div>
                 </li>

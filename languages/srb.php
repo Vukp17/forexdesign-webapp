@@ -8,7 +8,7 @@ $lang = array(
     "contact_us" => "Kontaktirajte nas",
     "contact_us_description" => "Ako imate bilo kakva pitanja ili vam je potrebna pomoć, slobodno nas kontaktirajte.",
     "go_to_contact_us" => "Idi na Kontaktirajte nas",
-    "gallery" => "Galerija",
+    "gallery" => "Galerija ideja",
     "previous" => "Prethodno",
     "next" => "Sledeće",
     // About us 
@@ -41,7 +41,7 @@ $lang = array(
     "about_us" => "O nama",
     "contact_us" => "Kontaktirajte nas",
     "certificates" => "Sertifikati",
-    "language" => "Jezik",
+    "language" => "srb",
     "english" => "Engleski",
     "serbian" => "Srpski",
     //Footer
