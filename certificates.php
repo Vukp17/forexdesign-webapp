@@ -26,7 +26,8 @@
                     <h3><?php echo $lang['pool_certificate']; ?></h3>
                     <p><?php echo $lang['pool_certificate_description']; ?></p>
                     <hr>
-                    <a href="pdfs/WOOD_CERTIFICATE.pdf" download class="btn btn-primary"><?php echo $lang['download_certificate']; ?></a>
+                    <a href="pdfs/WOOD_CERTIFICATE.pdf" download class="btn btn" style="background-color: #925028;
+    border-color: #925028; color:white"><?php echo $lang['download_certificate']; ?></a>
                 </div>
 
                 <div class="col-md-6 d-flex align-items-center justify-content-center">
@@ -35,10 +36,10 @@
             </div>
 
             <!-- Additional Text -->
-            <div class="additional-text mt-5">
+            <!-- <div class="additional-text mt-5">
                 <h2 class="text-center  mb-4"><?php echo $lang['trusted_certification_partner']; ?></h2>
                 <p><?php echo $lang['trusted_certification_partner_description']; ?></p>
-            </div>
+            </div> -->
 
         </div>
     </div>

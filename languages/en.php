@@ -11,9 +11,11 @@ $lang = array(
     "gallery" => "Gallery of ideas",
     "previous" => "Previous",
     "next" => "Next",
+    "our_partners" => "Our Partners",	
     // About us 
     "about_us" => "About us",
-    "about_us_text" => "Good Wood Sweden AB was founded in 2016 by Aleksandar, Linea, and Fredrik. Together we have almost 60 years of experience in the Swedish sawmill and planing industry. In 2018, our team was joined by Alma Ekelöf. In 2019, we moved to a new office. There are many sawmills near our office in Växjö, southern Sweden with which we cooperate in terms of sawn and processed wood. Our international customers are located in Europe and Asia.",
+    "about_us_text" => "
+    Since 2018, our company has been importing high-quality Swedish wooden planks, offering top-class solutions for exterior projects. With a focus on excellence and sustainability, we provide premium wood that exceeds industry standards in durability and aesthetics. Our diverse range of products caters to various outdoor applications, including decking, fencing, cladding, and landscaping. Committed to customer satisfaction, we offer personalized service and expert advice to ensure a seamless experience from start to finish. Choose us for your next exterior project and discover the timeless beauty and durability of Swedish wood.",
     "ceo" => "Chief Executive Officer",
     "ceo_bio" => "Darko is the visionary leader of our company. With his extensive knowledge and expertise, he leads our team to success.",
     "cto" => "Chief Technology Officer",

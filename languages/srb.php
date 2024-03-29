@@ -11,9 +11,10 @@ $lang = array(
     "gallery" => "Galerija ideja",
     "previous" => "Prethodno",
     "next" => "Sledeće",
+    "our_partners" => "Naši partneri",
     // About us 
     "about_us" => "O nama",
-    "about_us_text" => "Good Wood Sweden AB je osnovan 2016. godine od strane Aleksandra, Linee i Fredrika. Zajedno imamo skoro 60 godina iskustva u švedskoj industriji pilana i strugara. 2018. godine našem timu se pridružila Alma Ekelöf. 2019. godine preselili smo se u novu kancelariju. Ima puno pilana blizu naše kancelarije u Växjöu, južna Švedska sa kojima sarađujemo u pogledu piljenog i obrađenog drveta. Naši međunarodni kupci se nalaze u Evropi i Aziji.",
+    "about_us_text" => "Od 2018. godine, naša kompanija uvozi visokokvalitetne švedske drvene daske, nudeći vrhunska rešenja za eksterijer. S fokusom na izvrsnost i održivost, pružamo premijum drvo koje prevazilazi industrijske standarde u pogledu trajnosti i estetike. Naš raznovrstan asortiman proizvoda pokriva različite spoljne primene, uključujući terase, ograde, obloge i uređenje pejzaža. Posvećeni zadovoljstvu kupaca, nudimo personalizovanu uslugu i stručne savete kako bismo osigurali besprekoran doživljaj od početka do kraja. Izaberite nas za svoj sledeći eksterijerni projekat i otkrijte vremensku lepotu i trajnost švedskog drveta.",
     "ceo" => "Izvršni direktor",
     "ceo_bio" => "Darko je vizionarski lider naše kompanije. Sa svojim obimnim znanjem i stručnošću, on vodi naš tim ka uspehu.",
     "cto" => "Tehnički direktor",
@@ -51,4 +52,3 @@ $lang = array(
     "org_nr" => "Org-br",
     "address" => "Adresa",
 );
-

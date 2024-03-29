@@ -1,65 +1,103 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home - Your Business</title>
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <!-- Custom CSS -->
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Table Carousel with Calculator</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .pricing-table {
+      border: 1px solid #ccc;
+      border-radius: 5px;
+      margin-bottom: 20px;
+      padding: 20px;
+      text-align: center;
+    }
+    .pricing-table.selected {
+      border-color: blue;
+    }
+    .pricing-table .price {
+      font-size: 36px;
+      font-weight: bold;
+      margin-bottom: 20px;
+    }
+    .pricing-table .features {
+      list-style-type: none;
+      padding: 0;
+    }
+    .pricing-table .features li {
+      margin-bottom: 10px;
+    }
+    .pricing-table .button {
+      margin-top: 20px;
+    }
+    .pricing-table img {
+      max-width: 100px;
+      margin-bottom: 15px;
+    }
+    #calculator {
+      display: none;
+    }
+  </style>
 </head>
-
 <body>
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container">
-            <a class="navbar-brand" href="#">Your Business</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ml-auto">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="about.html">About Us</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="projects.html">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="contact.html">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
 
-    <!-- Content -->
-    <div class="container-fluid">
-        <div class="container">
-            <div class="row">
-                <!-- Text Content -->
-                <div class="col-lg-6 bg-light p-5">
-                    <h1>Welcome to Your Business</h1>
-                    <p>This is a simple website for your small business.</p>
-                </div>
-                <!-- Image -->
-                <div class="col-lg-6 p-0">
-                    <img src="images/kuca2.jpg" class="img-fluid" alt="Image">
-                </div>
+<div id="pricingCarousel" class="carousel slide" data-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <div class="pricing-table" onclick="selectPlan(this)">
+              <img src="https://via.placeholder.com/100" alt="Basic Plan">
+              <div class="price">$10/month</div>
+              <ul class="features">
+                <li>Feature 1</li>
+                <li>Feature 2</li>
+                <li>Feature 3</li>
+              </ul>
+              <button class="btn btn-primary button">Buy Now</button>
             </div>
+          </div>
+          <!-- Add more pricing tables here -->
         </div>
+      </div>
     </div>
+    <!-- Add more carousel items for additional plans -->
+  </div>
+  <a class="carousel-control-prev" href="#pricingCarousel" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#pricingCarousel" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
 
-    <!-- Bootstrap JS and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<div id="calculator" class="container mt-4">
+  <h2>Calculator Section</h2>
+  <input type="number" id="quantity" class="form-control mb-2" placeholder="Enter quantity">
+  <button class="btn btn-primary" onclick="calculatePrice()">Calculate Price</button>
+  <div id="result" class="mt-2"></div>
+</div>
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+  function selectPlan(element) {
+    $('.pricing-table').removeClass('selected');
+    $(element).addClass('selected');
+  }
+
+  function calculatePrice() {
+    var price = parseFloat($('.pricing-table.selected .price').text().replace('$', '').replace('/month', ''));
+    var quantity = parseInt($('#quantity').val());
+    var totalPrice = price * quantity;
+    $('#result').text('Total Price: $' + totalPrice.toFixed(2));
+  }
+</script>
+
 </body>
-
 </html>

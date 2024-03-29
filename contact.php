@@ -1,5 +1,3 @@
-
-
 <head>
     <link rel="stylesheet" href="css/about.css">
     <style>
@@ -70,7 +68,8 @@
                         <label for="message"><?php echo $lang['message']; ?>:</label>
                         <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary"><?php echo $lang['submit']; ?></button>
+                    <button type="submit" class="btn btn" style="background-color: #925028;
+    border-color: #925028; color:white"><?php echo $lang['submit']; ?></button>
                 </form>
             </div>
         </div>

@@ -57,7 +57,7 @@ include "languages/$langlocale.php";
             <ul class="navbar-nav">
                 <li class="nav-item dropdown active">
                     <a class="nav-link dropdown-toggle" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img src="images/<?php echo $langlocale; ?>.png" alt="<?php echo $lang['language']; ?>" style="height:20px; width:20px;">
+                        <img src="images/<?php echo $langlocale; ?>.png" alt="lang" style="height:20px; width:20px;">
                          <?php echo  $langlocale; ?>
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
