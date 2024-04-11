@@ -1,4 +1,5 @@
 <!-- footer.inc.php -->
+
 <footer class="footer bg-dark">
     <div class="container">
         <hr style="border-top: 1px solid #ddd; margin-top: 20px; margin-bottom: 20px;">

@@ -12,6 +12,8 @@ $lang = array(
     "previous" => "Prethodno",
     "next" => "Sledeće",
     "our_partners" => "Naši partneri",
+    "our_products" => "Naši proizvodi",
+    "latest_project" => "Najnoviji projekt",
     // About us 
     "about_us" => "O nama",
     "about_us_text" => "Od 2018. godine, naša kompanija uvozi visokokvalitetne švedske drvene daske, nudeći vrhunska rešenja za eksterijer. S fokusom na izvrsnost i održivost, pružamo premijum drvo koje prevazilazi industrijske standarde u pogledu trajnosti i estetike. Naš raznovrstan asortiman proizvoda pokriva različite spoljne primene, uključujući terase, ograde, obloge i uređenje pejzaža. Posvećeni zadovoljstvu kupaca, nudimo personalizovanu uslugu i stručne savete kako bismo osigurali besprekoran doživljaj od početka do kraja. Izaberite nas za svoj sledeći eksterijerni projekat i otkrijte vremensku lepotu i trajnost švedskog drveta.",

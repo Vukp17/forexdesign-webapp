@@ -12,6 +12,8 @@ $lang = array(
     "previous" => "Previous",
     "next" => "Next",
     "our_partners" => "Our Partners",	
+    "our_products" => "Our Products",
+    "latest_project" => "Latest Project",
     // About us 
     "about_us" => "About us",
     "about_us_text" => "

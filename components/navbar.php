@@ -1,7 +1,7 @@
 <!-- navbar.php -->
 
 <?php
-session_start();
+// session_start();
 if (isset($_GET['lang'])) {
     $langlocale = $_GET['lang'];
     // Store the language setting in the session so it persists across pages

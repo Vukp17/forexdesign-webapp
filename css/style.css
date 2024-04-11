@@ -115,3 +115,6 @@ footer {
     width: 100px;
     height: 100px;
 }
+.croped-imgs.carousel-item {
+    max-width: 800px;
+}
