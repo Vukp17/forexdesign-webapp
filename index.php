@@ -3,8 +3,9 @@
 <style>
     body {
         min-height: 100%;
-        display: grid;
-        grid-template-rows: auto 1fr auto;
+        /* display: grid; */
+        /* grid-template-rows: auto 1fr auto; */
+        font-family: sans-serif;
     }
 
     #projectCarousel {
@@ -183,13 +184,22 @@
 
     .hero h1 {
         font-weight: bolder;
-        font-family: sans-serif;
+        font-size: 3.5rem;
+       
     }
 
     .hero .icon {
         width: 25px;
-        margin-left: 5px;
+        /* margin-right: 2px; */
     }
+    .hero-img{
+    border: 1px solid #ccc; /* Adjust border color as needed */
+    border-radius: 2%; /* This will create a rounded border */
+    }
+    .icon-container {
+        margin-right: 25px;
+    }
+
 </style>
 
 <body>
@@ -201,19 +211,28 @@
         <div class="container pt-5 pb-5">
             <div class="row hero mt-3">
                 <!-- Text Content -->
-                <div class="col-lg-6 bg-light p-5">
+                <div class="col-lg-6 bg-light ">
+                    <div style="display:flex; flex-direction:row; margin-bottom: 15px">
+                        <div class="icon-container">
+                            <img class="icon" src="images/verified-badge-svgrepo-com.svg" alt="Verified Icon">
+                            <span>Verified</span>
+                        </div>
+                        
+                        <!-- Trusted Company Icon -->
+                        <div class="icon-container">
+                            <img class="icon" src="images/workspace-trusted-svgrepo-com.svg" alt="Trusted Company Icon">
+                            <span>Trusted Company</span>
+                        </div>
+                    </div>
+                   
                     <h1> <?php echo $lang['wooden_constructions']; ?></h1>
                     <p><?php echo $lang['scandinavia_essence']; ?></p>
                     <!-- Verified Icon -->
-                    <img class="icon" src="images/verified-badge-svgrepo-com.svg" alt="Verified Icon">
-                    <span>Verified</span>
-                    <!-- Trusted Company Icon -->
-                    <img class="icon" src="images/workspace-trusted-svgrepo-com.svg" alt="Trusted Company Icon">
-                    <span>Trusted Company</span>
+
                 </div>
                 <!-- Image -->
                 <div class="col-lg-6 p-0">
-                    <img src="images/kuca2.jpg" class="img-fluid" alt="Image">
+                    <img src="images/kuca2.jpg" class="img-fluid hero-img" alt="Image">
                 </div>
             </div>
             <!-- Services Section -->
